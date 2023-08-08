@@ -1,3 +1,5 @@
+***WARNING:*** **Pantry** is currently experiencing some issues with some of its scripts. It tends to work best on MacOS, and I am actively working on a fix.
+
 # Pantry
 *A tag-based wiki system inspired by [TiddlyWiki](https://tiddlywiki.com)*
 
