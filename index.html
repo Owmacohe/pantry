@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scripts/style.css">
+
+    <script src="scripts/tags.js"></script>
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/convert.js"></script>
+
+    <title></title>
+</head>
+
+<body class="flexcolumn">
+    <div class="flexcolumn">
+        <h1 id="title"></h1>
+        <h3 id="creator"></h3>
+    </div>
+
+    <div class="flexrow">
+        <div id="home"><button onclick="go_home()"><h3>HOME</h3></button></div>
+        <div class="flexrow" id="search"><h3>Search:</h3><input onkeydown="search(event, this)"></div>
+        <div class="flexrow" id="list"><h3>Recent pages:</h3></div>
+    </div>
+
+    <div class="flexrow">
+        <h1 id="loading">Loading...</h1>
+        <div class="flexrow" id="current_article"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,303 @@
+:root {
+    --background: #0B032D;
+    --article: #74546A;
+    --article-dark: #493543;
+    --article-light: #bb87ab;
+    --text: #541a38;
+    --title: #e15ea6;
+    --tags: #F67E7D;
+    --links: #FFB997;
+}
+
+::selection {
+    background: var(--tags);
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    color: var(--text);
+
+    background: var(--background);
+}
+
+h1, h2, h3 {
+    margin: 10px 10px 10px 0;
+
+    color: var(--title);
+}
+
+h1 {
+    justify-self: center;
+    align-self: center;
+    text-align: right;
+
+    min-width: 400px;
+
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+h3 {
+    margin: 5px;
+
+    font-size: 18px;
+}
+
+b {
+    font-weight: 750;
+}
+
+button {
+    cursor: pointer;
+
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+
+    margin-right: 1px;
+
+    border: none;
+    border-radius: 3px;
+
+    color: var(--tags);
+    background: var(--text);
+}
+button:hover {
+    color: var(--text);
+    background: var(--tags);
+}
+
+h2 button {
+    color: var(--title);
+    font-size: 23px;
+}
+
+a {
+    color: var(--links);
+}
+a:hover {
+    color: var(--tags);
+}
+
+ul, ol {
+    margin: 5px;
+
+    color: var(--tags);
+}
+
+.associated_list li {
+    margin: 3px;
+}
+
+.associated_list ul {
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.tags button {
+    margin: 5px;
+}
+
+img {
+    width: 400px;
+
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
+hr {
+    border: 0;
+    width: 80%;
+    background-color: var(--background);
+    height: 1px;
+}
+
+s {
+    text-decoration-thickness: 3px;
+    text-decoration-color: #0B032D;
+}
+
+input {
+    padding: 8px;
+
+    border: none;
+
+    color: var(--links);
+
+    background: var(--article-dark);
+}
+
+.flexrow, .flexcolumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexrow { flex-direction: row; }
+.flexcolumn { flex-direction: column; }
+
+.article {
+    justify-content: start;
+    align-items: start;
+
+    width: 1000px;
+    flex-shrink: 0;
+
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 5px;
+
+    background: var(--article);
+}
+
+.description {
+    overflow-x: hidden;
+
+    width: 97%;
+
+    padding: 10px;
+
+    font-weight: 375;
+    white-space: normal;
+    line-height: 20px;
+}
+
+.topbar {
+    justify-content: end;
+    align-items: end;
+
+    width: 100%;
+
+    border-radius: 5px;
+
+    background: var(--article-dark);
+}
+
+.associated_parent {
+    align-self: end;
+    justify-self: end;
+
+    align-items: end;
+    justify-content: end;
+
+    width: 100%;
+
+    border-radius: 5px;
+
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background: var(--article-dark);
+}
+
+.associated {
+    overflow-y: scroll;
+
+    max-height: 80px;
+
+    padding-right: 10px;
+
+    color: var(--title);
+}
+
+.associated button {
+    margin: 4px;
+}
+
+.tags {
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+
+    min-width: 150px;
+
+    margin: 10px;
+    padding: 5px;
+
+    border-radius: 5px;
+
+    background: var(--article);
+}
+
+#list {
+    flex-shrink: 0;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+    padding: 20px;
+
+    border-radius: 5px;
+
+    background: var(--article);
+}
+
+#list button {
+    margin: 2px;
+}
+
+.quote {
+    width: 60%;
+
+    padding: 5px;
+
+    border-radius: 4px;
+
+    background: var(--article-light);
+}
+
+#search {
+    margin: 10px;
+    padding: 20px;
+
+    border-radius: 5px;
+
+    background: var(--article);
+}
+
+#current_article {
+    justify-content: center;
+    align-items: center;
+}
+
+#null {
+    background: var(--background);
+}
+
+#title {
+    font-size: 60px;
+}
+
+#overflow {
+    align-self: end;
+    justify-self: end;
+
+    color: var(--links);
+}
+
+#home {
+    margin: 10px;
+    padding: 20px;
+
+    border-radius: 5px;
+
+    background: var(--article);
+}
+
+#character_count {
+    user-select: none;
+
+    margin-top: 20px;
+
+    color: var(--article-dark);
+}
