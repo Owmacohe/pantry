@@ -1,4 +1,4 @@
-***WARNING:*** **Pantry** is currently experiencing some issues with some of its scripts. It tends to work best on MacOS, and I am actively working on a fix.
+***WARNING:*** **Pantry** is currently experiencing issues with loading scripts in certain environments. It appears to work fine within certain IDE frameworks, but fails to load properly when opened raw. Very annoying. I'll be addressing this issue as soon as I can.
 
 # Pantry
 *A tag-based wiki system inspired by [TiddlyWiki](https://tiddlywiki.com)*
