@@ -12,6 +12,9 @@
 ::selection {
     background: var(--tags);
 }
+li::selection, li b::selection, li i::selection {
+    background: var(--text);
+}
 
 @font-face {
     font-family: 'Karla';

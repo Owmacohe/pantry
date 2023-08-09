@@ -107,7 +107,7 @@ function set_tags(file_name) {
 
 /// Function to add a tag and its tagged articles to the tags list
 function process_tags(file_name, text) {
-    let split = text.split('\n');
+    let split = trim_array(text.split('\n'));
 
     if (split.length > 1) {
         let line = split[2];

@@ -1,7 +1,7 @@
-***WARNING:*** **Pantry** is currently experiencing issues with loading scripts in certain environments. It appears to work fine within certain IDE frameworks, but fails to load properly when opened raw. Very annoying. I'll be addressing this issue as soon as I can.
-
 # Pantry
 *A tag-based wiki system inspired by [TiddlyWiki](https://tiddlywiki.com)*
+
+***Disclaimer:*** A Pantry wiki can only load properly when either hosted on a website or loaded through a local server, such as Jetbrains's Built-In Preview feature. It will not load properly when simply opening the local file.
 
 ## Setup
 
@@ -59,7 +59,7 @@ Before writing any articles, create a folder named `articles`, and place it in t
    - Write square brackets (`[]`) around any article name / tag to turn it into a clickable **button** *(you can write `|` before the end bracket followed by a display name for the button)* *(e.g. `[Display Name|article1]`)*
    - Write square brackets (`[]`) followed immediately by normal brackets (`()`) to insert a **link** *(the display name for the link should go in the square brackets, and the link should go in the normal brackets)* *(can be a local or external link)* *(e.g. `[Display Name|path/to/webpage/index.html]`)*
 
-Your wiki is now ready to go! Simply open the `pantry` folder or the `index.html` file in a web browser of your choice to view it in action. As **Pantry** is a web-built system, it can also be hosted on a website, and viewed publicly (just remember to set the `private` field in `settings.txt` to `false` before you publish it, if you have any private tags).
+Your wiki is now ready to go! Simply open the `pantry` folder or the `index.html` file in a web browser of your choice to view it in action *(see the disclaimer above for more info about loading the wiki)*. As **Pantry** is a web-built system, it can also be hosted on a website, and viewed publicly (just remember to set the `private` field in `settings.txt` to `false` before you publish it, if you have any private tags).
 
 ## Quote example
 

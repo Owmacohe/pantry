@@ -22,8 +22,8 @@ window.onload = function() {
     // Making sure to wait for the tag loading to be done
     setTimeout(function() {
         // Setting the wiki stats
-        document.getElementById('creator').innerText +=
-            ' (' + file_list.length + ' articles, ' + tags[0].length + ' tags)';
+        document.getElementById('creator').innerHTML +=
+            ' (' + file_list.length + ' articles, ' + tags[0].length + ' tags) (built using the <a href="https://github.com/owmacohe/pantry" target="_blank" rel="noopener noreferrer">Pantry</a> wiki system)';
 
         document.getElementById('loading').remove(); // Removing the loading message
 
@@ -41,7 +41,7 @@ function setup() {
     fetch('settings.txt')
         .then((res) => res.text())
         .then((text) => {
-            let split = text.split('\n');
+            let split = trim_array(text.split('\n'));
             let title = split[0].split(':')[1];
 
             // Setting the wiki title
@@ -63,7 +63,7 @@ function setup() {
     fetch('registry.txt')
         .then((res) => res.text())
         .then((text) => {
-            file_list = text.split('\n');
+            file_list = trim_array(text.split('\n'));
 
             for (let i = 0; i < file_list.length; i++)
                 if (file_list[i] === '')
@@ -181,7 +181,7 @@ function process_text(text, title) {
     description_html = '';
 
     // Split the file into its lines
-    let split = text.split('\n');
+    let split = trim_array(text.split('\n'));
 
     for (let i = 0; i < split.length; i++) {
         if (i >= 4) {
@@ -225,7 +225,7 @@ function process_text(text, title) {
     let character_length = 0;
 
     for (let character_index = 0; character_index < description.innerText.length; character_index++)
-        if (description.innerText[character_index] === ' ' || description.innerText[character_index].trim() !== '')
+        if (description.innerText[character_index] === ' ' || description.innerText[character_index] !== '')
             character_length++;
 
     // Appending a count of characters in the article
