@@ -69,10 +69,10 @@ function is_tag_private(file_name) {
     return false;
 }
 
-/// Quick function to make sure each element in an array is trimmed down to remove the whitespace
+/// Quick function to make sure each element in an array is trimmed down to remove the new line character
 function trim_array(array) {
     for (let i = 0; i < array.length; i++) {
-        array[i] = array[i].trim();
+        array[i] = array[i].trimEnd();
     }
 
     return array;
