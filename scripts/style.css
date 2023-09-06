@@ -2,7 +2,6 @@
     --background: #0B032D;
     --article: #74546A;
     --article-dark: #493543;
-    --article-light: #bb87ab;
     --text: #541a38;
     --title: #e15ea6;
     --tags: #F67E7D;
@@ -92,6 +91,7 @@ a:hover {
 
 ul, ol {
     margin: 5px;
+    padding-left: 20px;
 
     color: var(--tags);
 }
@@ -256,7 +256,9 @@ input {
 
     border-radius: 4px;
 
-    background: var(--article-light);
+    color: var(--tags);
+
+    background: var(--text);
 }
 
 #search {
