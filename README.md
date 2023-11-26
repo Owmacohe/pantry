@@ -1,7 +1,8 @@
 # Pantry
-*A tag-based wiki system inspired by [TiddlyWiki](https://tiddlywiki.com)*
 
-***Disclaimer:*** A Pantry wiki can only load properly when either hosted on a website or loaded through a local server, such as Jetbrains's Built-In Preview feature. It will not load properly when simply opening the local file.
+Pantry is tag-based wiki system. Operating purely through Javascript magic, it turns MarkDown files into hypertext articles, which can be tagged, linked to, and generated as dynamic lists. Pantry is inspired by [TiddlyWiki](https://tiddlywiki.com), and is an attempt to simplify and streamline many of that system's features. It requires no programming knowledge, save for some understanding of the system's modified MarkDown language *(see below for more)*, and the ability to edit `.md` and `.txt` files. I use it for my TTRPG worldbuilding, personal databases, and for complex note-taking. Please reach out and let me know if you use the system for any of your porojects!
+
+***Disclaimer:*** A Pantry wiki can only load properly when either hosted on a website or loaded through a local server, such as Jetbrains's Built-In Preview feature. It will not load properly when simply opening the local `index.html` file in a browser.
 
 ## Setup
 
